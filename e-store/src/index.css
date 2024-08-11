@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+input,
+textarea,
+select {
+  @apply block w-full px-2 py-1.5 border border-slate-700 
+    focus:outline-none 
+    focus:border-teal-500 focus:bg-none
+    rounded-md;
+}
+
+button {
+  @apply px-4 py-2 rounded-xl text-white;
+}
+
+label {
+  @apply block text-sm font-medium leading-6 text-gray-900;
+}
+
+.container{
+  @apply max-w-6xl mx-auto px-4
+}
+
+th{
+  @apply px-6 py-3 text-start font-medium text-gray-900 capitalize tracking-wider
+}
+
+td{
+  @apply px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-700
+}
+
+.error_message{
+  @apply text-red-500 text-sm font-medium italic mt-1
+}
